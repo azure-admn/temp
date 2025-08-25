@@ -3,3 +3,20 @@ https://basanagouda.medium.com/setting-up-jenkins-cluster-master-node-and-agent-
 https://medium.com/@xiaominghu19922/git-merge-vs-scary-git-rebase-5eceead4badc
 
 https://medium.com/@musinde/jenkins-fundamentals-bb247dc5adfd
+
+
+install jenkins  .................
+
+sudo apt update
+sudo apt install fontconfig openjdk-17-jre -y
+java --version
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \ https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \ https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+ /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update
+ sudo apt install jenkins -y
+systemctl status jenkins
+
+
+check the link ...... in  jenkins
+https://www.linuxtechi.com/how-to-install-jenkins-on-ubuntu/
